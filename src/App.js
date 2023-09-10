@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './componentes/nav/nav';
 import NavbarBootstrap from './componentes/nav/navbar/navbar';
+import ItemList from './componentes/itemList/itemList';
 
 
 function App() {
@@ -10,7 +11,10 @@ function App() {
    <body>
       <header>
         <NavbarBootstrap/>
-      </header>
+      </header>    
+      <main>
+        <ItemList/>      
+      </main>  
    </body>
   )
 }

@@ -1,0 +1,9 @@
+.producto{
+    border-radius: 30%;    
+    background-color:darkkhaki;
+}
+
+.productoimg{
+    width: 50%;
+    border-radius: 50%;
+}
