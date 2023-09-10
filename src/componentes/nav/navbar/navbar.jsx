@@ -12,7 +12,7 @@ export const NavbarBootstrap = () => {
     
 
     return (
-    <Navbar bg="dark" data-bs-theme="dark" className="Navbar">
+    <Navbar bg="dark" data-bs-theme="dark" className="Navbar col-12">
     <Container>
       <Navbar.Brand>Ventasmania</Navbar.Brand>
       <Nav className="me-auto">

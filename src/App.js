@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavbarBootstrap } from './componentes/nav/navbar/navbar';
-import ItemList from './componentes/itemList/itemList';
 import { useState } from 'react';
 import { productos } from './productos/productos';
 import { Accesorios } from './paginas/Accesorios';

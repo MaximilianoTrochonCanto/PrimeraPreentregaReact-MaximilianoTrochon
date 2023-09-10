@@ -2,11 +2,11 @@ import React, { useEffect } from 'react'
 import { productos } from '../../productos/productos'
 import { useState } from 'react'
 import Item from '../item/item'
-import './itemList.css'
+import './itemListContainer.css'
 import Button from 'react-bootstrap/Button';
 
 
-const ItemList = ({categoria}) => {
+const ItemListContainer = ({categoria,greetings}) => {
   
 
     
@@ -34,9 +34,9 @@ const ItemList = ({categoria}) => {
 
     return (
         <div>        
-            <Item producto={producto}/>
-        
-        <Button variant="primary" className='Navegar' onClick={navegar}>Navegar</Button>
+         <h2 className='p-1 mt-2'>{greetings}</h2>   
+        <Item producto={producto}/>        
+        <Button variant="primary" className='Navegar' onClick={navegar}>Siguiente</Button>
         </div>
   
     )
@@ -45,4 +45,4 @@ const ItemList = ({categoria}) => {
 
 }
 
-export default ItemList
+export default ItemListContainer

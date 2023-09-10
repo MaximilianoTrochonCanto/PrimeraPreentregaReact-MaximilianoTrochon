@@ -10,7 +10,7 @@
     background-color: red !important;
     border-radius: 50%;
     position: absolute;
-    top:-9px;
+    top:-39px;
     right:-100px;
     display: flex;
     justify-content: center;
@@ -51,5 +51,25 @@
     font-size: 6px;
     top:-17px;
         right:-45px;
+    }    
+}
+
+@media (max-width:440px){
+    .notificacion::after{
+        width: 5px;
+    height: 5px;
+    font-size: 2px;
+    top:-15px;
+        right:-35px;
+    }    
+}
+
+@media (max-width:335px){
+    .notificacion::after{
+        width: 5px;
+    height: 5px;
+    font-size: 2px;
+    top:-12px;
+        right:-23px;
     }    
 }

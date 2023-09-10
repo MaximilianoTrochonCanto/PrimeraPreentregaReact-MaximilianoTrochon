@@ -1,9 +1,13 @@
 .producto{
     border-radius: 30%;    
-    background-color:darkkhaki;
+    background:radial-gradient(rgb(255, 201, 85),rgb(148, 124, 59));
+}
+
+.producto{
+    font-weight: bold;
 }
 
 .productoimg{
-    width: 50%;
+    width: 40%;
     border-radius: 50%;
 }

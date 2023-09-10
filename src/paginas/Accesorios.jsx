@@ -1,8 +1,8 @@
 import React from 'react'
-import ItemList from '../componentes/itemList/itemList'
+import ItemListContainer from '../componentes/itemList/itemListContainer'
 
 export const Accesorios = () => {
   return (
-    <ItemList categoria={"Accesorios"}/>
+    <ItemListContainer categoria={"Accesorio"} greetings={"Bienvenidos!"}/>
   )
 }
