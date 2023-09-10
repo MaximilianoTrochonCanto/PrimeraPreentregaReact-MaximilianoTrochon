@@ -1,28 +1,42 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { productos } from '../../productos/productos'
 import { useState } from 'react'
 import Item from '../item/item'
 import './itemList.css'
+import Button from 'react-bootstrap/Button';
 
 
-
-const ItemList = () => {
+const ItemList = ({categoria}) => {
   
+
+    
+    let productosCat = productos.filter(p => p.categoria == categoria)
+    console.log(productosCat)
     const [posicion,setPosicion] = useState(1)
-    const [producto,setProducto] = useState(productos.filter(p => p.categoria == "Remeras")[0])
-  
-    let productoSeleccionado = producto
+    const [producto,setProducto] = useState(productosCat[0])
+    
 
+    function navegar(){
 
-    function cambiar(){
-        setPosicion(posicion + 1)
-        if(posicion<productos.length)setProducto(productos[posicion])
+         if(posicion == productosCat.length-1){
+            console.log(posicion)
+            setPosicion(0)
+            setProducto(productosCat[posicion])
+            console.log(posicion)
+        }else{
+            console.log(posicion)
+            setPosicion(posicion+1)
+            setProducto(productosCat[posicion])
+            console.log(posicion)
+        }
     }
+    
 
     return (
-        <div>
-        <Item producto={productoSeleccionado}/>
-        <button onClick={cambiar}>Siguiente</button>
+        <div>        
+            <Item producto={producto}/>
+        
+        <Button variant="primary" className='Navegar' onClick={navegar}>Navegar</Button>
         </div>
   
     )

@@ -1,20 +1,44 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from './componentes/nav/nav';
-import NavbarBootstrap from './componentes/nav/navbar/navbar';
+import {NavbarBootstrap } from './componentes/nav/navbar/navbar';
 import ItemList from './componentes/itemList/itemList';
+import { useState } from 'react';
+import { productos } from './productos/productos';
+import { Accesorios } from './paginas/Accesorios';
+import { Calzado } from './paginas/Calzado';
+import { Remeras } from './paginas/Remeras';
+
+
+
 
 
 function App() {
+
+  let Componente;
+  switch(window.location.pathname){
+    case "/":
+    Componente = <Remeras/>;
+    break
+    case "/accesorios":
+      Componente = <Accesorios/>
+    break
+    case "/calzado":
+      Componente = <Calzado/>;
+    break
+  }
+  
   return (
    <body>
       <header>
         <NavbarBootstrap/>
-      </header>    
+      </header>
       <main>
-        <ItemList/>      
-      </main>  
+        {Componente}
+        </main>    
+      
+
+      
    </body>
   )
 }

@@ -1,13 +1,18 @@
 
 export const productos = [
-    {id:0,nombre:"Remera 1",precio:500, imagen:"/imagenes/Remeras/Remera1.jpg",categoria:"Remeras"}, 
-    {id:1,nombre:"Remera 2",precio:510, imagen:"/imagenes/Remeras/Remera2.png",categoria:"Remeras"}, 
-    {id:2,nombre:"Remera 3",precio:520, imagen:"/imagenes/Remeras/Remera3.png",categoria:"Remeras"}, 
-    {id:3,nombre:"Reloj",precio:1520, imagen:"/imagenes/Accesorios/reloj.jpeg",categoria:"Accesorios"}, 
-    {id:4,nombre:"Anillo",precio:1100, imagen:"/imagenes/Accesorios/Anillo.webp",categoria:"Accesorios"}, 
-    {id:5,nombre:"Zapatillas 1",precio:2500, imagen:"/imagenes/Calzado/Calzado1.jpg",categoria:"Calzado"}, 
-    {id:6,nombre:"Zapatillas 2",precio:2600, imagen:"/imagenes/Calzado/Calzado2.jpg",categoria:"Calzado"}, 
-    {id:7,nombre:"Zapatillas 3",precio:2800, imagen:"/imagenes/Calzado/Calzado3.jpg",categoria:"Calzado"}     
+    {id:0,nombre:"Negra",precio:500, imagen:"/imagenes/Remeras/Remera1.png",categoria:"Remeras"}, 
+    {id:1,nombre:"Roja",precio:510, imagen:"/imagenes/Remeras/Remera2.png",categoria:"Remeras"}, 
+    {id:2,nombre:"Azul",precio:520, imagen:"/imagenes/Remeras/Remera3.png",categoria:"Remeras"}, 
+    {id:3,nombre:"Verde",precio:520, imagen:"/imagenes/Remeras/Remera4.png",categoria:"Remeras"}, 
+    {id:4,nombre:"Negra & roja",precio:520, imagen:"/imagenes/Remeras/Remera5.png",categoria:"Remeras"}, 
+    {id:5,nombre:"Roja Fluor",precio:520, imagen:"/imagenes/Remeras/Remera6.png",categoria:"Remeras"}, 
+    {id:6,nombre:"Reloj cuero",precio:1520, imagen:"/imagenes/Accesorios/Reloj.png",categoria:"Accesorios"}, 
+    {id:7,nombre:"Anillo",precio:3100, imagen:"/imagenes/Accesorios/Anillo1.png",categoria:"Accesorios"}, 
+    {id:8,nombre:"Anillo dragón",precio:3100, imagen:"/imagenes/Accesorios/Anillo4.png",categoria:"Accesorios"}, 
+    {id:9,nombre:"Reloj dorado",precio:3300, imagen:"/imagenes/Accesorios/Reloj2.png",categoria:"Accesorios"},     
+    {id:10,nombre:"Rosa",precio:2800, imagen:"/imagenes/Calzado/Calzado3.png",categoria:"Calzado"},     
+    {id:11,nombre:"Blanco",precio:2800, imagen:"/imagenes/Calzado/Calzado4.png",categoria:"Calzado"},    
+    
 ]
 
 
