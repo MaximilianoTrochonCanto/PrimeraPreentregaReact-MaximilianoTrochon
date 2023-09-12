@@ -7,7 +7,8 @@ const Item = ({producto}) => {
         
         <h1 className='col-12 p-2'>{producto.categoria}: {producto.nombre}</h1>
         <img className="productoimg" src={producto.imagen} alt="" />
-        <p>Precio: ${producto.precio}</p>        
+        <p>Precio: ${producto.precio}</p>
+        <p>Stock: {producto.stock}</p>        
     </div>
   )
 }
