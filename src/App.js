@@ -17,7 +17,7 @@ function App() {
   let Componente;
   switch(window.location.pathname){
     case "/":
-    Componente = <Remeras/>;
+    Componente = <Remeras />;
     break
     case "/accesorios":
       Componente = <Accesorios/>

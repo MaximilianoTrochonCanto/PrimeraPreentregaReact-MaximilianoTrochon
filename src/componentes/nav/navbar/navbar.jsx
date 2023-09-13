@@ -7,7 +7,7 @@ import Cartwidget from '../cartwidget/cartwidget';
 import './navbar.css'
 
 
-export const NavbarBootstrap = () => {
+export const NavbarBootstrap = ({carrito}) => {
 
     
 
