@@ -8,3 +8,9 @@
         font-size: xx-small;
     }
 }
+
+.navlink{
+    color: white;
+    text-decoration: none;
+    margin:0 2%;
+}

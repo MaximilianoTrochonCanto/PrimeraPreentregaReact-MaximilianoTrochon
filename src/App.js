@@ -7,39 +7,22 @@ import { productos } from './productos/productos';
 import { Accesorios } from './paginas/Accesorios';
 import { Calzado } from './paginas/Calzado';
 import { Remeras } from './paginas/Remeras';
-
-
-
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 
 
 function App() {
-
-  let Componente;
-  switch(window.location.pathname){
-    case "/":
-    Componente = <Remeras />;
-    break
-    case "/accesorios":
-      Componente = <Accesorios/>
-    break
-    case "/calzado":
-      Componente = <Calzado/>;
-    break
-  }
-  
-  return (
-   <body>
+  return(
+    
       <header>
         <NavbarBootstrap/>
       </header>
-      <main>
-        {Componente}
-        </main>    
       
+      
+    
 
-      
-   </body>
+    
   )
+  
 }
 
 export default App;
